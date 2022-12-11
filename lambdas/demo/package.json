@@ -1,0 +1,20 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "lambda that demos monorepo setup",
+  "author": "Martijn Sturm",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "aws-lambda": "^1.0.7",
+    "@custom-project/demo-lib": "*",
+    "@custom-project/utilities": "*"
+  },
+  "scripts": {
+    "build": "yarn generate-lock-entry > yarn.lock"
+  },
+  "devDependencies": {
+    "esbuild": "^0.15.12"
+  },
+  "main": "./src/lambda.ts"
+}

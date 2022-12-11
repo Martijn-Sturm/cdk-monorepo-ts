@@ -1,0 +1,15 @@
+{
+  "name": "@custom-project/demo-lib",
+  "version": "0.0.1",
+  "dependencies": {
+    "@custom-project/utilities": "*"
+  },
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "tsc --build --force ."
+  },
+  "private": true,
+  "main": "dist/index.js"
+}

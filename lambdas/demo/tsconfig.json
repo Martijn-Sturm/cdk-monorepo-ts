@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2015",
+    "declaration": true,
+    "baseUrl": ".",
+    "paths": {
+      "utilities": ["../shared/utilities"],
+      "demo-lib": ["../shared/demo-lib"]
+    }
+  },
+  "include": ["./src/**/*.ts"],
+  "references": [
+    { "path": "../shared/demo-lib" },
+    { "path": "../shared/utilities" }
+  ]
+}

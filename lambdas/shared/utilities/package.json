@@ -1,0 +1,12 @@
+{
+  "name": "@custom-project/utilities",
+  "version": "0.0.1",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "tsc --build --force ."
+  },
+  "private": true,
+  "main": "dist/index.js"
+}

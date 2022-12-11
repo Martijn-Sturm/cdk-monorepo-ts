@@ -1,14 +1,19 @@
-# Welcome to your CDK TypeScript project
+# Monorepo
 
-This is a blank project for CDK development with TypeScript.
+## Commands
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+### Install and 'build'
 
-## Useful commands
+Run `yarn install` install the dependencies of **all** workspaces, including the root project.
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+Subsequently, run `yarn workspaces run build` to transpile all custom libraries' typescript code into javascript code to their `dist` folders.
+
+### Testing
+
+Run `npx jest` to run all jest projects.
+
+Jest project names can be found in the jest.config.ts file of the respective project. The property is 'displayName'.
+
+Run `npx jest --selectProjects <projectname>` to run a specific jest project only
+
+Run `npx jest --ignoreProjects <projectname>` to exclude jest projects from running

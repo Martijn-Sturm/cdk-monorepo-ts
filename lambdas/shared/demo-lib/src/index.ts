@@ -1,0 +1,1 @@
+export { printSomeMessage, printAndSayHello } from './funcs';

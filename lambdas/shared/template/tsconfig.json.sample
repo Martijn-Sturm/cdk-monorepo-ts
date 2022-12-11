@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2015",
+    "declaration": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "composite": true,
+    "declarationMap": true,
+    "paths": {
+      "<custom-lib-name>": ["<relative-path-to-custom-lib-root-folder>"]
+    }
+  },
+  "include": ["./src/**/*.ts"]
+  "references": [{ "path": "../<other_lib_folder>" }]
+}
